@@ -1,0 +1,102 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify Homepage title",
+        "description": "",
+        "id": "homepage-sanity;verify-homepage-title",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9478402100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on HomePage",
+            "match": {
+              "location": "HomePageStepDefn.user_is_on_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19524600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify title of the HomePage",
+            "match": {
+              "location": "HomePageStepDefn.verify_title_of_the_HomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "HomePage Sanity",
+    "description": "",
+    "id": "homepage-sanity",
+    "keyword": "Feature",
+    "uri": "HomePage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify Login title",
+        "description": "",
+        "id": "login-sanity;verify-login-title",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 132500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Page",
+            "match": {
+              "location": "LoginStepDefn.user_is_on_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify title of the Page",
+            "match": {
+              "location": "LoginStepDefn.verify_title_of_the_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Sanity",
+    "description": "",
+    "id": "login-sanity",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
