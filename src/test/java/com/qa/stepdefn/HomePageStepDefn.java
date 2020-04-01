@@ -24,6 +24,7 @@ public class HomePageStepDefn {
 	public void verify_title_of_the_HomePage() throws Throwable {
 		String  homePageTitle  = driver.getTitle();
 		System.out.println("HomePage Title is "+homePageTitle);
+		driver.quit();
 	    
 	}
 

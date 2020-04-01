@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		
 		features = {"src/test/java/com/qa/features"},
 		glue = {"com.qa.stepdefn"},
-		plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json" },
+		plugin = { "pretty", "json:target/cucumber.json" },
 		monochrome = true,
 		tags = {"@Sanity"}
 		

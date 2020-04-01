@@ -3,34 +3,43 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "Verify Homepage title",
+        "line": 10,
+        "name": "Verify Tag file format",
         "description": "",
-        "id": "homepage-sanity;verify-homepage-title",
+        "id": "verification-of-tag-file;verify-tag-file-format;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9478402100,
+              "duration": 184447600,
               "status": "passed"
             },
             "line": 5,
-            "name": "User is on HomePage",
+            "name": "User is having the File \"Commit.csv\" in drop location",
             "match": {
-              "location": "HomePageStepDefn.user_is_on_HomePage()"
+              "arguments": [
+                {
+                  "val": "Commit.csv",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 19524600,
+              "duration": 5313700,
               "status": "passed"
             },
             "line": 6,
-            "name": "verify title of the HomePage",
+            "name": "verify file format",
             "match": {
-              "location": "HomePageStepDefn.verify_title_of_the_HomePage()"
+              "location": "CommitFileStepDefn.verify_file_format()"
             },
             "keyword": "Then "
           }
@@ -41,46 +50,46 @@
             "name": "@Sanity"
           }
         ]
-      }
-    ],
-    "name": "HomePage Sanity",
-    "description": "",
-    "id": "homepage-sanity",
-    "keyword": "Feature",
-    "uri": "HomePage.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
+      },
       {
-        "line": 4,
-        "name": "Verify Login title",
+        "line": 11,
+        "name": "Verify Tag file format",
         "description": "",
-        "id": "login-sanity;verify-login-title",
+        "id": "verification-of-tag-file;verify-tag-file-format;;3",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 132500,
+              "duration": 237800,
               "status": "passed"
             },
             "line": 5,
-            "name": "User is on Page",
+            "name": "User is having the File \"Commit.docx\" in drop location",
             "match": {
-              "location": "LoginStepDefn.user_is_on_Page()"
+              "arguments": [
+                {
+                  "val": "Commit.docx",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 32400,
-              "status": "passed"
+              "duration": 1411500,
+              "error_message": "junit.framework.AssertionFailedError\r\n\tat junit.framework.Assert.fail(Assert.java:55)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:22)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:31)\r\n\tat com.qa.stepdefn.CommitFileStepDefn.verify_file_format(CommitFileStepDefn.java:43)\r\n\tat ✽.Then verify file format(CommitFile.feature:6)\r\n",
+              "status": "failed"
             },
             "line": 6,
-            "name": "verify title of the Page",
+            "name": "verify file format",
             "match": {
-              "location": "LoginStepDefn.verify_title_of_the_Page()"
+              "location": "CommitFileStepDefn.verify_file_format()"
             },
             "keyword": "Then "
           }
@@ -93,10 +102,10 @@
         ]
       }
     ],
-    "name": "Login Sanity",
+    "name": "Verification of Tag File",
     "description": "",
-    "id": "login-sanity",
+    "id": "verification-of-tag-file",
     "keyword": "Feature",
-    "uri": "Login.feature"
+    "uri": "CommitFile.feature"
   }
 ]
