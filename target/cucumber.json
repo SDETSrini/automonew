@@ -4,15 +4,15 @@
     "elements": [
       {
         "line": 10,
-        "name": "Verify Tag file format",
+        "name": "Verify Commit File format",
         "description": "",
-        "id": "verification-of-tag-file;verify-tag-file-format;;2",
+        "id": "verification-of-commit-file;verify-commit-file-format;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 184447600,
+              "duration": 93042800,
               "status": "passed"
             },
             "line": 5,
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 5313700,
+              "duration": 1428400,
               "status": "passed"
             },
             "line": 6,
@@ -52,24 +52,24 @@
         ]
       },
       {
-        "line": 11,
-        "name": "Verify Tag file format",
+        "line": 28,
+        "name": "Verify Commit File Layout Structure",
         "description": "",
-        "id": "verification-of-tag-file;verify-tag-file-format;;3",
+        "id": "verification-of-commit-file;verify-commit-file-layout-structure;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 237800,
+              "duration": 176400,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User is having the File \"Commit.docx\" in drop location",
+            "line": 18,
+            "name": "User is having the File \"Commit.csv\" in drop location",
             "match": {
               "arguments": [
                 {
-                  "val": "Commit.docx",
+                  "val": "Commit.csv",
                   "offset": 25
                 }
               ],
@@ -82,29 +82,88 @@
           },
           {
             "result": {
-              "duration": 1411500,
-              "error_message": "junit.framework.AssertionFailedError\r\n\tat junit.framework.Assert.fail(Assert.java:55)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:22)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:31)\r\n\tat com.qa.stepdefn.CommitFileStepDefn.verify_file_format(CommitFileStepDefn.java:43)\r\n\tat ✽.Then verify file format(CommitFile.feature:6)\r\n",
-              "status": "failed"
+              "duration": 6356600,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "verify file format",
+            "line": 19,
+            "name": "Verify File Header Record Date",
             "match": {
-              "location": "CommitFileStepDefn.verify_file_format()"
+              "location": "CommitFileStepDefn.verify_File_Header_Record_Date()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 88300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify File Header Record Number of Records",
+            "match": {
+              "location": "CommitFileStepDefn.verify_File_Header_Record_Number_of_Records()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify File Header Record Function",
+            "match": {
+              "location": "CommitFileStepDefn.verify_File_Header_Record_Function()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Verify File Header Record ALS Bank Number",
+            "match": {
+              "location": "CommitFileStepDefn.verify_File_Header_Record_ALS_Bank_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Verify File Header Record ALS Account Number",
+            "match": {
+              "location": "CommitFileStepDefn.verify_File_Header_Record_ALS_Account_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Verify File Header Record CLN Pool",
+            "match": {
+              "location": "CommitFileStepDefn.verify_File_Header_Record_CLN_Pool()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 3,
+            "line": 16,
             "name": "@Sanity"
           }
         ]
       }
     ],
-    "name": "Verification of Tag File",
+    "name": "Verification of Commit File",
     "description": "",
-    "id": "verification-of-tag-file",
+    "id": "verification-of-commit-file",
     "keyword": "Feature",
     "uri": "CommitFile.feature"
   }
