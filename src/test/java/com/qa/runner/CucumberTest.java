@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 		glue = {"com.qa.stepdefn"},
 		plugin = { "pretty", "json:target/cucumber.json" },
 		monochrome = true,
-		tags = {"@Sanity"}
+		tags = {"@Sanity1"}
 		
 		
 		

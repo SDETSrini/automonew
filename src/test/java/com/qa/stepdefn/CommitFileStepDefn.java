@@ -17,6 +17,10 @@ public class CommitFileStepDefn extends TestBase {
 	boolean flag = false;
 	boolean flagnew;
 	
+	int actualALSAccountNumber = 10;
+	int actualALSBankNumber= 3;
+	int actualCLNPool = 12;
+	
 	TestBase data;
 	List<Map<String, String>> CSVData;
 	
@@ -89,6 +93,27 @@ public class CommitFileStepDefn extends TestBase {
 	@Then("^Verify File Header Record ALS Bank Number$")
 	public void verify_File_Header_Record_ALS_Bank_Number() throws Throwable {
 		
+		data = new TestBase();
+
+		CSVData = data.ReadDataFromCSVFile(filename);
+		
+		System.out.println(CSVData);
+		
+		
+		for (int i =0; i<CSVData.size(); i++)
+		{
+			
+			String alsbanknumber = CSVData.get(i).get("als bank number");				
+			System.out.println(alsbanknumber);
+			
+			int expectedALSBankNumber  = alsbanknumber.length();
+			
+			//ALS Bank Number should be of 3 			
+			Assert.assertEquals(expectedALSBankNumber, actualALSBankNumber);
+			
+						
+		}	
+		
 		
 	   
 	}
@@ -96,36 +121,38 @@ public class CommitFileStepDefn extends TestBase {
 	@Then("^Verify File Header Record ALS Account Number$")
 	public void verify_File_Header_Record_ALS_Account_Number() throws Throwable {
 		
+	
 		for (int i =0; i<CSVData.size(); i++)
 		{
 			
-			String AccNo = CSVData.get(i).get("accountnumber");				
+			String AccNo = CSVData.get(i).get("als account number");				
 			System.out.println(AccNo);
 			
-			//Account Number should be of 10 digit
+			int accountlength  = AccNo.length();
 			
-			if(AccNo.length()== 10)
-			{ 
-			System.out.println("Account Number is of 10 Character and it is Pass " +AccNo);
-			flagnew = true;
-			}
-			else
-			{
-				flagnew = false;
-				break;
-				
-			}
+			//Account Number should be of 10 digit				
+			Assert.assertEquals(accountlength, actualALSAccountNumber);
 			
-			
-			
-			Assert.assertTrue(flagnew);
-			
+						
 		}	
 	  
 	}
 
 	@Then("^Verify File Header Record CLN Pool$")
 	public void verify_File_Header_Record_CLN_Pool() throws Throwable {
+		
+		for (int i =0; i<CSVData.size(); i++)
+		{
+			
+			String clnpool = CSVData.get(i).get("cln pool");				
+			System.out.println(clnpool);
+			
+			int expectedclnpool  = clnpool.length();
+			
+			//CLN Pool should be of 12 
+			Assert.assertEquals(expectedclnpool, actualCLNPool);
+					
+		}	
 	   
 	}
 

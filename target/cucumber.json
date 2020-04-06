@@ -3,55 +3,6 @@
     "line": 1,
     "elements": [
       {
-        "line": 10,
-        "name": "Verify Commit File format",
-        "description": "",
-        "id": "verification-of-commit-file;verify-commit-file-format;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 93042800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is having the File \"Commit.csv\" in drop location",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Commit.csv",
-                  "offset": 25
-                }
-              ],
-              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1428400,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "verify file format",
-            "match": {
-              "location": "CommitFileStepDefn.verify_file_format()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@Sanity"
-          }
-        ]
-      },
-      {
         "line": 28,
         "name": "Verify Commit File Layout Structure",
         "description": "",
@@ -61,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 176400,
+              "duration": 95675000,
               "status": "passed"
             },
             "line": 18,
@@ -82,45 +33,23 @@
           },
           {
             "result": {
-              "duration": 6356600,
+              "duration": 10708900,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Verify File Header Record Date",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_Date()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 88300,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Verify File Header Record Number of Records",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_Number_of_Records()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 12500,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Verify File Header Record Function",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_Function()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13700,
-              "status": "passed"
-            },
+            "comments": [
+              {
+                "line": 19,
+                "value": "#Then Verify File Header Record Date"
+              },
+              {
+                "line": 20,
+                "value": "#And Verify File Header Record Number of Records"
+              },
+              {
+                "line": 21,
+                "value": "#And Verify File Header Record Function"
+              }
+            ],
             "line": 22,
             "name": "Verify File Header Record ALS Bank Number",
             "match": {
@@ -130,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 139700,
+              "duration": 366300,
               "status": "passed"
             },
             "line": 23,
@@ -142,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 17300,
+              "duration": 436800,
               "status": "passed"
             },
             "line": 24,
@@ -156,7 +85,7 @@
         "tags": [
           {
             "line": 16,
-            "name": "@Sanity"
+            "name": "@Sanity1"
           }
         ]
       }
