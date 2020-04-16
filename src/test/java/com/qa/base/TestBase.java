@@ -7,12 +7,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
 
 public class TestBase {
+	
+	protected static String filename;
 	
 	
 	protected String getFileExtension(File file) {
@@ -55,6 +59,12 @@ public class TestBase {
 			CSVData.add(map);
 		}
 		return CSVData;
+	}
+	
+	public static String GenerateStringFromResource(String path) throws IOException {
+
+		return new String(Files.readAllBytes(Paths.get(path)));
+
 	}
  
 

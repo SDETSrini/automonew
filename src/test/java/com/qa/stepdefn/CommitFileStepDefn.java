@@ -13,7 +13,7 @@ import junit.framework.Assert;
 public class CommitFileStepDefn extends TestBase {
 	
 	
-	String filename;
+	
 	boolean flag = false;
 	boolean flagnew;
 	

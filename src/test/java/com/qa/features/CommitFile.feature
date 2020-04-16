@@ -13,7 +13,7 @@ Examples:
 #Check with		
 #Scenario Outline: Verify Commit File Name Pattern	
 
-@Sanity1
+@Progression
 Scenario Outline: Verify Commit File Layout Structure
 Given User is having the File "<FileName>" in drop location
 #Then Verify File Header Record Date
