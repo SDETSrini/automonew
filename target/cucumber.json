@@ -3,121 +3,24 @@
     "line": 1,
     "elements": [
       {
-        "line": 28,
-        "name": "Verify Commit File Layout Structure",
+        "line": 10,
+        "name": "Verification of ALS Master File Layout Structure",
         "description": "",
-        "id": "verification-of-commit-file;verify-commit-file-layout-structure;;2",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 90073400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User is having the File \"Commit.csv\" in drop location",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Commit.csv",
-                  "offset": 25
-                }
-              ],
-              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6388800,
-              "status": "passed"
-            },
-            "comments": [
-              {
-                "line": 19,
-                "value": "#Then Verify File Header Record Date"
-              },
-              {
-                "line": 20,
-                "value": "#And Verify File Header Record Number of Records"
-              },
-              {
-                "line": 21,
-                "value": "#And Verify File Header Record Function"
-              }
-            ],
-            "line": 22,
-            "name": "Verify File Header Record ALS Bank Number",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_ALS_Bank_Number()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 629000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Verify File Header Record ALS Account Number",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_ALS_Account_Number()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 421000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Verify File Header Record CLN Pool",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_CLN_Pool()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
-            "name": "@Progression"
-          }
-        ]
-      }
-    ],
-    "name": "Verification of Commit File",
-    "description": "",
-    "id": "verification-of-commit-file",
-    "keyword": "Feature",
-    "uri": "CommitFile.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 15,
-        "name": "Verification of RMS Transaction File Layout Structure",
-        "description": "",
-        "id": "verification-of-rms-transaction-file;verification-of-rms-transaction-file-layout-structure;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 190200,
+              "duration": 83777800,
               "status": "passed"
             },
             "line": 5,
-            "name": "User is having the File \"RMS_Transaction.txt\" in drop location",
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
             "match": {
               "arguments": [
                 {
-                  "val": "RMS_Transaction.txt",
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
                   "offset": 25
                 }
               ],
@@ -130,89 +33,29 @@
           },
           {
             "result": {
-              "duration": 1158300,
+              "duration": 8423800,
               "status": "passed"
             },
             "line": 6,
-            "name": "Verify ACCOUNT Number format",
+            "name": "Verify ACCOUNT Number format in ALS File",
             "match": {
-              "location": "RMSTransactionFileStepDefn.verify_ACCOUNT_Number_format()"
+              "location": "ALSMasterFileStepDefn.verify_ACCOUNT_Number_format_in_ALS_File()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 397500,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify BKNO Number format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verify_BKNO_Number_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 387400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify ACCOUNT EXTENSION format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verify_ACCOUNT_EXTENSION_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 454900,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Veriy TRANDATE format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.veriy_TRANDATE_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 511500,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Verify TRANCODE format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verify_TRANCODE_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 487100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Verfy TRANAMT format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verfy_TRANAMT_format()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@Progression"
+            "name": "@Progression1"
           }
         ]
       }
     ],
-    "name": "Verification of RMS Transaction File",
+    "name": "Verification of ALS Master File",
     "description": "",
-    "id": "verification-of-rms-transaction-file",
+    "id": "verification-of-als-master-file",
     "keyword": "Feature",
-    "uri": "RMSTransactionFile.feature"
+    "uri": "ALSMasterFile.feature"
   }
 ]
