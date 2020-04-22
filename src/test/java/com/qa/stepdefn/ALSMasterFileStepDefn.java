@@ -11,15 +11,13 @@ import junit.framework.Assert;
 
 public class ALSMasterFileStepDefn extends TestBase {
 	
-	
-	int ACCOUNT_001 = 14;
-	int ACLASS_02 = 2;
-	int ATYP_03 = 1;
-	int APR_04 = 11; //check with Prathika
-	
-	
-	@Then("^Verify ACCOUNT Number format in ALS File$")
-	public void verify_ACCOUNT_Number_format_in_ALS_File() throws Throwable {
+	@Then("^Verify \"([^\"]*)\" is having length of \"([^\"]*)\" in position \"([^\"]*)\"$")
+	public void verify_is_having_length_of_in_position(String arg1, String arg2, String arg3) throws Throwable {
+		
+		String field = arg1;
+		int len = Integer.valueOf(arg2);
+		int pos = Integer.valueOf(arg3);
+				
 		
 		BufferedReader in = new BufferedReader(new FileReader(filename));
 		String str=null;
@@ -43,12 +41,15 @@ public class ALSMasterFileStepDefn extends TestBase {
 			
 			System.out.println("String Array size "+arrSplit.length);
 			
-			String BankAccountNumber  = arrSplit[0];
-			System.out.println("Actual BankAccountNumber is"+ BankAccountNumber);
+			String expectedvalue  = arrSplit[pos];
+			System.out.println(arg1 + "Value is"+ expectedvalue);
 			
-		int ActualBankAccountLength =	BankAccountNumber.length();
-		
-		Assert.assertEquals(ACCOUNT_001, ActualBankAccountLength);
+			if(!expectedvalue.isEmpty())
+			{
+					
+				int Actualvalue =	expectedvalue.length();
+				Assert.assertEquals(len, Actualvalue);
+			}
 		
 		}
 	
