@@ -17,6 +17,8 @@ public class ALSMasterFileStepDefn extends TestBase {
 		String field = arg1;
 		int len = Integer.valueOf(arg2);
 		int pos = Integer.valueOf(arg3);
+		
+		boolean	fnew=false;
 				
 		
 		BufferedReader in = new BufferedReader(new FileReader(filename));
@@ -48,7 +50,12 @@ public class ALSMasterFileStepDefn extends TestBase {
 			{
 					
 				int Actualvalue =	expectedvalue.length();
-				Assert.assertEquals(len, Actualvalue);
+				
+				if(Actualvalue<=len)
+				{
+					fnew=true;
+				}
+				Assert.assertTrue(fnew);
 			}
 		
 		}

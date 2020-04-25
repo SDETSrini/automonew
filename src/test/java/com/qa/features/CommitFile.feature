@@ -1,6 +1,6 @@
 Feature: Verification of Commit File
 
-@Sanity
+@Progression
 Scenario Outline: Verify Commit File format
 Given User is having the File "<FileName>" in drop location
 Then verify file format

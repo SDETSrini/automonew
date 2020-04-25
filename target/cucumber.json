@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 11,
+        "line": 10,
         "name": "Verification of ALS Master File Layout Structure",
         "description": "",
         "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 173844167,
+              "duration": 155112685,
               "status": "passed"
             },
             "line": 5,
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 3107736,
+              "duration": 4374044,
               "status": "passed"
             },
             "line": 6,
@@ -66,12 +66,12 @@
         "tags": [
           {
             "line": 3,
-            "name": "@Progression"
+            "name": "@Progression1"
           }
         ]
       },
       {
-        "line": 12,
+        "line": 11,
         "name": "Verification of ALS Master File Layout Structure",
         "description": "",
         "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;3",
@@ -80,7 +80,7 @@
         "steps": [
           {
             "result": {
-              "duration": 135075,
+              "duration": 320472,
               "status": "passed"
             },
             "line": 5,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 828332,
+              "duration": 1139860,
               "status": "passed"
             },
             "line": 6,
@@ -134,7 +134,483 @@
         "tags": [
           {
             "line": 3,
-            "name": "@Progression"
+            "name": "@Progression1"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Verification of ALS Master File Layout Structure",
+        "description": "",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 556853,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1285198,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify \"ATYP\" is having length of \"1\" in position \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ATYP",
+                  "offset": 8
+                },
+                {
+                  "val": "1",
+                  "offset": 35
+                },
+                {
+                  "val": "2",
+                  "offset": 51
+                }
+              ],
+              "location": "ALSMasterFileStepDefn.verify_is_having_length_of_in_position(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Progression1"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Verification of ALS Master File Layout Structure",
+        "description": "",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 248962,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 680672,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify \"APR\" is having length of \"12\" in position \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "APR",
+                  "offset": 8
+                },
+                {
+                  "val": "12",
+                  "offset": 34
+                },
+                {
+                  "val": "3",
+                  "offset": 51
+                }
+              ],
+              "location": "ALSMasterFileStepDefn.verify_is_having_length_of_in_position(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Progression1"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Verification of ALS Master File Layout Structure",
+        "description": "",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 124812,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1542106,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify \"PMT\" is having length of \"16\" in position \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PMT",
+                  "offset": 8
+                },
+                {
+                  "val": "16",
+                  "offset": 34
+                },
+                {
+                  "val": "4",
+                  "offset": 51
+                }
+              ],
+              "location": "ALSMasterFileStepDefn.verify_is_having_length_of_in_position(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Progression1"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Verification of ALS Master File Layout Structure",
+        "description": "",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 119846,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 682658,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify \"TERM\" is having length of \"3\" in position \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TERM",
+                  "offset": 8
+                },
+                {
+                  "val": "3",
+                  "offset": 35
+                },
+                {
+                  "val": "5",
+                  "offset": 51
+                }
+              ],
+              "location": "ALSMasterFileStepDefn.verify_is_having_length_of_in_position(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Progression1"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Verification of ALS Master File Layout Structure",
+        "description": "",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 156263,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 847860,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify \"ORID\" is having length of \"8\" in position \"6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ORID",
+                  "offset": 8
+                },
+                {
+                  "val": "8",
+                  "offset": 35
+                },
+                {
+                  "val": "6",
+                  "offset": 51
+                }
+              ],
+              "location": "ALSMasterFileStepDefn.verify_is_having_length_of_in_position(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Progression1"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Verification of ALS Master File Layout Structure",
+        "description": "",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;9",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 117197,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 694907,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify \"MATD\" is having length of \"8\" in position \"7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MATD",
+                  "offset": 8
+                },
+                {
+                  "val": "8",
+                  "offset": 35
+                },
+                {
+                  "val": "7",
+                  "offset": 51
+                }
+              ],
+              "location": "ALSMasterFileStepDefn.verify_is_having_length_of_in_position(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Progression1"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Verification of ALS Master File Layout Structure",
+        "description": "",
+        "id": "verification-of-als-master-file;verification-of-als-master-file-layout-structure;;10",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115542,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having the File \"ALS Master File Extract- UTTI Unit test.txt\" in drop location",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ALS Master File Extract- UTTI Unit test.txt",
+                  "offset": 25
+                }
+              ],
+              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 559170,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify \"STAT\" is having length of \"2\" in position \"8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "STAT",
+                  "offset": 8
+                },
+                {
+                  "val": "2",
+                  "offset": 35
+                },
+                {
+                  "val": "8",
+                  "offset": 51
+                }
+              ],
+              "location": "ALSMasterFileStepDefn.verify_is_having_length_of_in_position(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Progression1"
           }
         ]
       }
@@ -144,207 +620,5 @@
     "id": "verification-of-als-master-file",
     "keyword": "Feature",
     "uri": "ALSMasterFile.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 22,
-        "name": "Verify Commit File Layout Structure",
-        "description": "",
-        "id": "verification-of-commit-file;verify-commit-file-layout-structure;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 160237,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User is having the File \"Commit.csv\" in drop location",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Commit.csv",
-                  "offset": 25
-                }
-              ],
-              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11904214,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Verify File Header Record ALS Bank Number",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_ALS_Bank_Number()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 416152,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Verify File Header Record ALS Account Number",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_ALS_Account_Number()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 428071,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Verify File Header Record CLN Pool",
-            "match": {
-              "location": "CommitFileStepDefn.verify_File_Header_Record_CLN_Pool()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@Progression"
-          }
-        ]
-      }
-    ],
-    "name": "Verification of Commit File",
-    "description": "",
-    "id": "verification-of-commit-file",
-    "keyword": "Feature",
-    "uri": "CommitFile.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 15,
-        "name": "Verification of RMS Transaction File Layout Structure",
-        "description": "",
-        "id": "verification-of-rms-transaction-file;verification-of-rms-transaction-file-layout-structure;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 153284,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is having the File \"RMS_Transaction.txt\" in drop location",
-            "match": {
-              "arguments": [
-                {
-                  "val": "RMS_Transaction.txt",
-                  "offset": 25
-                }
-              ],
-              "location": "CommitFileStepDefn.user_is_having_the_File_in_drop_location(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 601882,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Verify ACCOUNT Number format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verify_ACCOUNT_Number_format()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 436016,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify BKNO Number format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verify_BKNO_Number_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 466475,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify ACCOUNT EXTENSION format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verify_ACCOUNT_EXTENSION_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 436348,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Veriy TRANDATE format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.veriy_TRANDATE_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 524743,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Verify TRANCODE format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verify_TRANCODE_format()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 491636,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Verfy TRANAMT format",
-            "match": {
-              "location": "RMSTransactionFileStepDefn.verfy_TRANAMT_format()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@Progression"
-          }
-        ]
-      }
-    ],
-    "name": "Verification of RMS Transaction File",
-    "description": "",
-    "id": "verification-of-rms-transaction-file",
-    "keyword": "Feature",
-    "uri": "RMSTransactionFile.feature"
   }
 ]
