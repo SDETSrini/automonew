@@ -16,3 +16,4 @@ Feature: Verification of ALS Master File
       | ALS Master File Extract- UTTI Unit test.txt | ORID          |      8 |        6 |
       | ALS Master File Extract- UTTI Unit test.txt | MATD          |      8 |        7 |
       | ALS Master File Extract- UTTI Unit test.txt | STAT          |      2 |        8 |
+      

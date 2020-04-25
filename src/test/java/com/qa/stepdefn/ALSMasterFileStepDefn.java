@@ -44,6 +44,7 @@ public class ALSMasterFileStepDefn extends TestBase {
 			System.out.println("String Array size "+arrSplit.length);
 			
 			String expectedvalue  = arrSplit[pos];
+			expectedvalue = expectedvalue.trim();  //Code to handle space
 			System.out.println(arg1 + "Value is"+ expectedvalue);
 			
 			if(!expectedvalue.isEmpty())
