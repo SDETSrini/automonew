@@ -43,9 +43,22 @@ public class ALSMasterFileStepDefn extends TestBase {
 			
 			System.out.println("String Array size "+arrSplit.length);
 			
+			for(int ji=0;ji<1;ji++)
+			{
+			     
+				String AccountNumber = arrSplit[0];
+				String procdate = arrSplit[2];
+				
+				System.out.println("Account Number is"+AccountNumber);
+				System.out.println("procdate is"+procdate);
+				
+				
+			}
 			String expectedvalue  = arrSplit[pos];
+			
+			
 			expectedvalue = expectedvalue.trim();  //Code to handle space
-			System.out.println(arg1 + "Value is"+ expectedvalue);
+//			System.out.println(arg1 + "Value is"+ expectedvalue);
 			
 			if(!expectedvalue.isEmpty())
 			{
