@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 547409700,
+              "duration": 526072200,
               "status": "passed"
             },
             "line": 5,
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 18097800,
+              "duration": 16130400,
               "status": "passed"
             },
             "line": 6,
@@ -66,7 +66,7 @@
         "tags": [
           {
             "line": 3,
-            "name": "@ProgressionNew"
+            "name": "@ProgressionNew1010"
           }
         ]
       },
@@ -80,7 +80,7 @@
         "steps": [
           {
             "result": {
-              "duration": 732400,
+              "duration": 261800,
               "status": "passed"
             },
             "line": 5,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 6508500,
+              "duration": 6448600,
               "status": "passed"
             },
             "line": 6,
@@ -134,7 +134,7 @@
         "tags": [
           {
             "line": 3,
-            "name": "@ProgressionNew"
+            "name": "@ProgressionNew1010"
           }
         ]
       },
@@ -148,7 +148,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12591300,
+              "duration": 382800,
               "status": "passed"
             },
             "line": 5,
@@ -169,7 +169,7 @@
           },
           {
             "result": {
-              "duration": 1075900,
+              "duration": 3069100,
               "status": "passed"
             },
             "line": 6,
@@ -202,7 +202,7 @@
         "tags": [
           {
             "line": 3,
-            "name": "@ProgressionNew"
+            "name": "@ProgressionNew1010"
           }
         ]
       },
@@ -216,7 +216,7 @@
         "steps": [
           {
             "result": {
-              "duration": 198800,
+              "duration": 825800,
               "status": "passed"
             },
             "line": 5,
@@ -237,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 1005100,
+              "duration": 3772300,
               "status": "passed"
             },
             "line": 6,
@@ -270,7 +270,7 @@
         "tags": [
           {
             "line": 3,
-            "name": "@ProgressionNew"
+            "name": "@ProgressionNew1010"
           }
         ]
       }

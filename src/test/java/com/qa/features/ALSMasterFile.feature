@@ -1,6 +1,6 @@
 Feature: Verification of ALS Master File
 
-  @Progression1
+  @Progression0810
   Scenario Outline: Verification of ALS Master File Layout Structure
     Given User is having the File "<FileName>" in drop location
     Then Verify "<Field>" is having length of "<Length>" in position "<Position>"

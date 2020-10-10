@@ -1,6 +1,6 @@
 Feature: Verification of ALS Transaction File
 
-  @ProgressionNew
+  @ProgressionNew1010
   Scenario Outline: Verification of ALS Transaction File Layout Structure 
     Given User is having the File "<FileName>" in drop location
     Then Verify "<Field>" is having length of "<Length>" in position "<Position>"
